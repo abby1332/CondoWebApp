@@ -1,6 +1,9 @@
 //App.js
 import axios from 'axios';
 import './App.css';
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import PermitForm from './PermitForm'
 
 //Data will be the string sent from the server
 const apiCall = () => {
@@ -13,9 +16,11 @@ const apiCall = () => {
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <button onClick={apiCall}>Make the API call!</button>
-      </header>
+      <Container>
+          <Row>
+            <PermitForm/>
+          </Row>
+      </Container>
     </div>
   );
 }
