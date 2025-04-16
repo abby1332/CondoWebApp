@@ -1,1 +1,10 @@
 /* client/src/App.css */
+
+body {
+    background-color:rgb(254, 245, 233);
+}
+
+.content {
+    padding: 10px;
+}
+

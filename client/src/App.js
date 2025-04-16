@@ -1,27 +1,36 @@
-//App.js
 import axios from 'axios';
 import './App.css';
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import PermitForm from './PermitForm'
+import './index.css';
 
-//Data will be the string sent from the server
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+
+import PermitForm from './component/PermitForm';
+import Header from './component/Header';
+import Footer from './component/Footer';
+
+// Example API call (not used in this file directly but can be moved into PermitForm if needed)
 const apiCall = () => {
   axios.get('http://localhost:8080').then((data) => {
-    //This console.log goes to the frontend
-    console.log(data)
-  })
-}
+    console.log(data);
+  });
+};
 
 function App() {
   return (
-    <div className="App">
-      <Container>
+    <>
+      <Header />
+
+      <div id="permit" className="content">
+        <Container>
           <Row>
-            <PermitForm/>
+            <PermitForm />
           </Row>
-      </Container>
-    </div>
+        </Container>
+      </div>
+
+      <Footer />
+    </>
   );
 }
 
