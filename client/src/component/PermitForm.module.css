@@ -23,20 +23,27 @@
   }
   
   /* === Field Wrapper === */
-  .hook__field {
+  .field {
     display: flex;
     flex-direction: column;
   }
   
   /* === Labels === */
-  .hook__text {
+  .text {
     font-size: 1.2rem;
-    font-weight: 600;
     margin-bottom: 0.3rem;
   }
+
+  /* === Info paragraph === */
+  .info {
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+    text-align: center;
+  }
+  
   
   /* === Inputs === */
-  .hook__input {
+  .input {
     padding: 10px;
     width: 100%;
     font-size: 1.6rem;
@@ -46,27 +53,27 @@
     transition: border-color 0.3s ease;
   }
   
-  .hook__input:focus {
+  .input:focus {
     outline: none;
     border-color: rgb(83, 177, 212);
     box-shadow: 0 0 0 3px rgba(83, 177, 212, 0.2);
   }
   
   /* === Error Text === */
-  .hook__error {
+  .error {
     margin-top: 0.3rem;
     font-size: 1rem;
     color: red;
   }
   
   /* === Title & Subtitle === */
-  .hook__title {
+  .title {
     font-size: 2.4rem;
     text-align: center;
     margin-bottom: 1rem;
   }
   
-  .hook__subtitle {
+  .subtitle {
     font-size: 1.6rem;
     text-align: center;
     margin-bottom: 2rem;
