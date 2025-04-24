@@ -3,14 +3,31 @@ import Form from 'react-bootstrap/Form'
 
 export default function PermitForm() {
     const submitForm = (e) => {
-        e.preventDefault()
-        console.log({})
+        e.preventDefault();
         const formData = new FormData(e.currentTarget);
-        for(let [key, value] of formData.entries()) {
-            console.log({key, value});
-        }
-    }
-
+        const data = Object.fromEntries(formData.entries());
+    
+        fetch('http://localhost:8080/api', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(result => {
+            console.log('Success:', result);
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+    };
+    
     return (
         <Form onSubmit={(submitForm)}>
             <input name="firstName" type="text" placeholder="First Name"/>
