@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/CondoWebApp/static/css/main.fedfbd04.css",
+    "main.js": "/CondoWebApp/static/js/main.503b87a4.js",
+    "static/js/453.419a5d54.chunk.js": "/CondoWebApp/static/js/453.419a5d54.chunk.js",
+    "static/media/shellBG.png": "/CondoWebApp/static/media/shellBG.123e5dc93ec8ab6ecd30.png",
+    "static/media/logoWhite.png": "/CondoWebApp/static/media/logoWhite.9bee0aee5678c05a8eb7.png",
+    "index.html": "/CondoWebApp/index.html",
+    "main.fedfbd04.css.map": "/CondoWebApp/static/css/main.fedfbd04.css.map",
+    "main.503b87a4.js.map": "/CondoWebApp/static/js/main.503b87a4.js.map",
+    "453.419a5d54.chunk.js.map": "/CondoWebApp/static/js/453.419a5d54.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fedfbd04.css",
+    "static/js/main.503b87a4.js"
+  ]
+}
