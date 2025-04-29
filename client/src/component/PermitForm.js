@@ -118,8 +118,8 @@ export default function PermitForm() {
       )}
       {responseStatus === 'error' && (
         <Alert variant="danger" className="mt-3 text-center">
-          There was an error submitting the form. Please try again.
-        </Alert>
+        <strong>Error:</strong> There was an error submitting the form. Please try again.
+      </Alert>
       )}
     </form>
   );

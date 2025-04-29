@@ -4,6 +4,7 @@ import './index.css';
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import PermitForm from './component/PermitForm';
 import Header from './component/Header';
