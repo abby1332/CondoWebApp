@@ -33,7 +33,13 @@ function Footer() {
           <ul>
             <li><a href="https://www.sunhostresorts.com/">Home</a></li>
             <li><a href="https://www.sunhostresorts.com/things-to-do">Things to Do</a></li>
-            <li><a href="https://www.sunhostresorts.com/sites/default/files/sunhost_surf_song_3-1-2024.pdf">Rate Card</a></li>
+            <li>
+              <a href="https://www.sunhostresorts.com/sites/default/files/sunhost_surf_song_3-1-2024.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              type='application/pdf'
+              >Rate Card (PDF)</a>
+            </li>
             <li><a href="https://www.sunhostresorts.com/sunhost-rental-policies">Rental Policies</a></li>
           </ul>
         </div>
