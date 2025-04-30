@@ -24,15 +24,21 @@ export default function PermitForm() {
     setResponseStatus(null);
 
     try {
-      const response = await fetch('http://localhost:8080/api', {
+      fetch('http://localhost:8080/api', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: {'Content-Type': 'application/json'},
         body: JSON.stringify(data),
-      });
+      })
+      .then(response => {
+        if(!response.ok) throw new Error('Server error');
+        return response.blob();
+      })
+      .then(blob => {
+        const url = window.URL.createObjectURL(blob);
+        window.open(url, '_blank');
+        setResponseStatus('success');
+      })
 
-      if (!response.ok) throw new Error('Server error');
-
-      setResponseStatus('success');
     } catch (err) {
       setResponseStatus('error');
     } finally {
