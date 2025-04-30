@@ -10,24 +10,26 @@ function Footer() {
     <footer className={styles.footer}>
       <div className={styles.columns}>
         <div className={styles.column}>
-          <h4>Contact Us</h4>
-          <p><strong>SunHost Corporation</strong></p>
-          <a
-            href="https://www.google.com/maps/place/12930+Gulf+Ln,+Madeira+Beach,+FL+33708"
-            target="_blank"
-            rel="noopener noreferrer"
-            >
-            <p>
-            12930 Gulf Lane<br />
-            Madeira Beach, FL 33708
-            </p>
-          </a>
-          <p><a href="tel:8007414678">(800) 741-4678</a></p>
-          <p><a href="https://www.sunhostresorts.com/contact-us">Contact Us</a></p>
+          <h3>Contact Us</h3>
+          <h4><strong>SunHost Corporation</strong></h4>
+          <ul>
+            <li>
+                <a
+                href="https://www.google.com/maps/place/12930+Gulf+Ln,+Madeira+Beach,+FL+33708"
+                target="_blank"
+                rel="noopener noreferrer"
+                >
+                12930 Gulf Lane<br />
+                Madeira Beach, FL 33708
+              </a>
+            </li>
+            <li><a href="tel:8007414678">(800) 741-4678</a></li>
+            <li><a href="https://www.sunhostresorts.com/contact-us">Contact Us</a></li>
+          </ul>
         </div>
 
         <div className={styles.column}>
-          <h4>Quick Links</h4>
+          <h3>Quick Links</h3>
           <ul>
             <li><a href="https://www.sunhostresorts.com/">Home</a></li>
             <li><a href="https://www.sunhostresorts.com/things-to-do">Things to Do</a></li>
@@ -37,10 +39,10 @@ function Footer() {
         </div>
 
         <div className={styles.social}>
-          <a href="https://www.facebook.com/sunhost/"><FaFacebookF /></a>
-          <a href="https://instagram.com/sunhostresorts?igshid=YmMyMTA2M2Y="><FaInstagram /></a>
-          <a href="https://twitter.com/sunhostFL"><FaTwitter /></a>
-          <a href="https://www.youtube.com/channel/UC3iZrU_S9e_9MMqjz_Qf5hA"><FaYoutube /></a>
+          <a href="https://www.facebook.com/sunhost/" aria-label="Sunhost on Facebook"><FaFacebookF /></a>
+          <a href="https://instagram.com/sunhostresorts?igshid=YmMyMTA2M2Y=" aria-label='Sunhost on Instagram'><FaInstagram /></a>
+          <a href="https://twitter.com/sunhostFL" aria-label='Sunhost on Twitter'><FaTwitter /></a>
+          <a href="https://www.youtube.com/channel/UC3iZrU_S9e_9MMqjz_Qf5hA" aria-label='Sunhost on Youtube'><FaYoutube /></a>
         </div>
       </div>
 

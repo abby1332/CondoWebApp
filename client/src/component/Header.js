@@ -9,7 +9,7 @@ function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.leftSide}>
-        <img src={logoWhite} alt="Logo" className={styles.logo} />
+        <img src={logoWhite} alt="Madeira Beach Yacht Club Condos Logo" className={styles.logo} />
       </div>
 
       <nav className={styles.desktopNav}>

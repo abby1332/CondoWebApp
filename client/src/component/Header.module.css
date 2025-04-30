@@ -1,6 +1,6 @@
 .header {
     height: 70px;
-    background-color: rgb(83, 177, 212);
+    background-color: #3D7D94;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -104,7 +104,7 @@
       position: absolute;
       top: 70px;
       right: 0;
-      background: rgb(83, 177, 212);
+      background: #3D7D94;
       flex-direction: column;
       width: 100%;
       padding: 1rem 0;

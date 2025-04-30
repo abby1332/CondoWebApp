@@ -57,9 +57,10 @@ export default function PermitForm() {
         <Input label="Email" name="email" type="email" register={register} errors={errors} />
 
         <div className={styles.field}>
-          <label className={styles.text}>Check-In Date</label>
+          <label for="checkIn" className={styles.text}>Check-In Date</label>
           <input
             type="date"
+            id="checkIn"
             className={styles.input}
             min={minCheckInDate.toISOString().split("T")[0]}
             {...register("checkIn", {
@@ -74,9 +75,10 @@ export default function PermitForm() {
         </div>
 
         <div className={styles.field}>
-          <label className={styles.text}>Check-Out Date</label>
+          <label for="checkOut" className={styles.text}>Check-Out Date</label>
           <input
             type="date"
+            id="checkOut"
             className={styles.input}
             {...register("checkOut", {
               required: "Check-out date is required",
@@ -129,8 +131,8 @@ export default function PermitForm() {
 function Input({ label, name, type = "text", register, errors }) {
   return (
     <div className={styles.field}>
-      <label for="firstName" className={styles.text}>{label}</label>
-      <input type={type} id="firstName" className={styles.input} {...register(name, { required: `${label} is required` })} />
+      <label htmlFor={name} className={styles.text}>{label}</label>
+      <input type={type} id={name} className={styles.input} {...register(name, { required: `${label} is required` })} />
       {errors[name] && <p className={styles.error}>{errors[name].message}</p>}
     </div>
   );
