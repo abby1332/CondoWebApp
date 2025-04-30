@@ -9,13 +9,13 @@ function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.leftSide}>
-        <img src={logoWhite} alt="Logo" className={styles.logo} />
+        <img src={logoWhite} alt="Madeira Beach Yacht Club Condos Logo" className={styles.logo} />
       </div>
 
       <nav className={styles.desktopNav}>
         <a href="https://www.sunhostresorts.com/" className={styles.navLink}>Home</a>
         <a href="#permit" className={styles.navLink}>Request a Permit</a>
-        <a href="#faq" className={styles.navLink}>FAQs</a>
+        <a href="https://www.sunhostresorts.com/frequently-asked-questions" className={styles.navLink}>FAQs</a>
         <a href="https://www.sunhostresorts.com/contact-us" className={styles.navLink}>Contact</a>
       </nav>
 
