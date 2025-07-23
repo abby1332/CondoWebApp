@@ -55,7 +55,7 @@
   
   .input:focus {
     outline: none;
-    border-color: #3D7D94;
+    border-color: rgb(83, 177, 212);
     box-shadow: 0 0 0 3px rgba(83, 177, 212, 0.2);
   }
   
@@ -82,7 +82,7 @@
   
   /* === Submit Button === */
   .custom-btn {
-    background-color: #3D7D94;
+    background-color: rgb(83, 177, 212);
     border: none;
     color: white;
     border-radius: 10px;
@@ -94,13 +94,13 @@
   }
   
   .custom-btn:hover {
-    background-color: #3D7D94;
+    background-color: rgb(70, 160, 192);
     transform: translateY(-2px);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
   }
   
   .custom-btn:active {
-    background-color: #3D7D94;
+    background-color: rgb(54, 136, 165);
     transform: translateY(1px);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   }
